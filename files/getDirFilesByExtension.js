@@ -1,3 +1,6 @@
+var fs=require("fs");
+var path=require("path");
+
 function getDirFilesByExtension(extensions, filePath){
   return new Promise((resolve, reject)=>{
     fs.readdir( filePath , (err,files)=>{
