@@ -1,5 +1,4 @@
-
-export function urlify (strings, ...keys) {
+function urlify (strings, ...keys) {
     return (function (...values) {
         let dict = values[ values.length - 1 ] || {};
         let result = [ strings[ 0 ] ];
